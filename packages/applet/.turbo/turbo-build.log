@@ -1,0 +1,85 @@
+
+
+> @vue/devtools-applet@7.7.2 build /Users/kang-wooyong/Downloads/devtools-main/packages/applet
+> vite build
+
+[36mvite v6.2.0 [32mbuilding for production...[36m[39m
+[96msrc/modules/components/index.vue[0m:[93m1152[0m:[93m1[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'default' cannot be named without a reference to '.pnpm/vue@2.7.16/node_modules/vue'. This is likely not portable. A type annotation is necessary.
+
+[7m1152[0m export default (await import('vue')).defineComponent({
+[7m    [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m1153[0m setup() {
+[7m    [0m [91m~~~~~~~~~[0m
+[7m ...[0m 
+[7m1159[0m __typeEl: {} as __VLS_TemplateResult['rootEl'],
+[7m    [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m1160[0m });
+[7m    [0m [91m~~~[0m
+[96msrc/modules/components/index.vue[0m:[93m1152[0m:[93m1[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'default' cannot be named without a reference to '.pnpm/vue@2.7.16/node_modules/vue/types/v3-component-public-instance'. This is likely not portable. A type annotation is necessary.
+
+[7m1152[0m export default (await import('vue')).defineComponent({
+[7m    [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m1153[0m setup() {
+[7m    [0m [91m~~~~~~~~~[0m
+[7m ...[0m 
+[7m1159[0m __typeEl: {} as __VLS_TemplateResult['rootEl'],
+[7m    [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m1160[0m });
+[7m    [0m [91m~~~[0m
+[96msrc/modules/components/index.vue[0m:[93m1152[0m:[93m1[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'default' cannot be named without a reference to '.pnpm/vue@2.7.16/node_modules/vue/types/vue'. This is likely not portable. A type annotation is necessary.
+
+[7m1152[0m export default (await import('vue')).defineComponent({
+[7m    [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m1153[0m setup() {
+[7m    [0m [91m~~~~~~~~~[0m
+[7m ...[0m 
+[7m1159[0m __typeEl: {} as __VLS_TemplateResult['rootEl'],
+[7m    [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m1160[0m });
+[7m    [0m [91m~~~[0m
+[96msrc/components/state/RootStateViewer.vue[0m:[93m60[0m:[93m10[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ data: CustomInspectorState[]; index: string; expandedStateId: string; }' is not assignable to parameter of type '{ readonly data: CustomInspectorState[]; readonly depth: number; readonly index: string; readonly expandedStateId?: string | undefined; } & VNodeProps & AllowedComponentProps & ComponentCustomProps & Record<...>'.
+  Property 'depth' is missing in type '{ data: CustomInspectorState[]; index: string; expandedStateId: string; }' but required in type '{ readonly data: CustomInspectorState[]; readonly depth: number; readonly index: string; readonly expandedStateId?: string | undefined; }'.
+
+[7m60[0m         <ChildStateViewer :data="item" :index="`${index}`" :expanded-state-id="expandedStateId" />
+[7m  [0m [91m         ~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/components/state/ChildStateViewer.vue[0m:[93m7[0m:[93m3[0m
+    [7m7[0m   depth: number
+    [7m [0m [96m  ~~~~~[0m
+    'depth' is declared here.
+[96msrc/modules/components/index.vue[0m:[93m342[0m:[93m14[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; withTag: true; onLeave: any; onHover: any; }' is not assignable to parameter of type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined;...'.
+  Property 'depth' is missing in type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; withTag: true; onLeave: any; onHover: any; }' but required in type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined; }'.
+
+[7m342[0m             <ComponentTree v-model="activeComponentId" :data="tree" :with-tag="true" @hover="highlighter.highlight" @leave="highlighter.unhighlight" />
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+
+  [96msrc/components/tree/TreeViewer.vue[0m:[93m13[0m:[93m3[0m
+    [7m13[0m   depth: number
+    [7m  [0m [96m  ~~~~~[0m
+    'depth' is declared here.
+[96msrc/modules/custom-inspector/components/state/Index.vue[0m:[93m217[0m:[93m16[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; }' is not assignable to parameter of type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined;...'.
+  Type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; }' is missing the following properties from type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined; }': depth, withTag
+
+[7m217[0m               <ComponentTree v-model="selected" :data="tree" />
+[7m   [0m [91m               ~~~~~~~~~~~~~[0m
+[96msrc/modules/pinia/components/store/Index.vue[0m:[93m217[0m:[93m14[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; }' is not assignable to parameter of type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined;...'.
+  Type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; }' is missing the following properties from type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined; }': depth, withTag
+
+[7m217[0m             <ComponentTree v-model="selected" :data="tree" />
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+[96msrc/modules/router/components/routes/Index.vue[0m:[93m182[0m:[93m12[0m - [91merror[0m[90m TS2345: [0mArgument of type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; }' is not assignable to parameter of type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined;...'.
+  Type '{ modelValue: string; data: { id: string; label: string; children?: ...[] | undefined; tags?: { label: string; textColor: number; backgroundColor: number; tooltip?: string | undefined; }[] | undefined; name?: string | undefined; file?: string | undefined; }[]; }' is missing the following properties from type '{ readonly modelValue?: any; readonly data: ComponentTreeNode[] | InspectorTree[]; readonly depth: number; readonly withTag: boolean; readonly "onUpdate:modelValue"?: ((value: any) => any) | undefined; readonly onLeave?: ((...args: any[]) => any) | undefined; readonly onHover?: ((...args: any[]) => any) | undefined; }': depth, withTag
+
+[7m182[0m           <ComponentTree v-model="selected" :data="tree" />
+[7m   [0m [91m           ~~~~~~~~~~~~~[0m
+
+[2K[1Gtransforming (1) [2msrc/index.ts[22m[2K[1Gtransforming (5) [2m../ui/dist/uno.css[22m[2K[1Gtransforming (14) [2m plugin-vue:export-helper[22m[2K[1Gtransforming (27) [2msrc/components/basic/Empty.vue[22m[2K[1Gtransforming (59) [2m../../node_modules/.pnpm/vue-virtual-scroller@2.0.0-beta.8_vue@3.5.13_typescript@5.7.3_/node_modules/vue-virtual-scroller/dist/vue-virtual-scroller.css[2K[1Gtransforming (81) [2msrc/utils/color.ts[22m[2K[1Gtransforming (91) [2msrc/components/state/StateFieldInputEditor.vue[22m[2K[1G[2K[1G[2K[1G[32m✓[39m 97 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[32m
+[36m[vite:dts][32m Start generate declaration files...[39m
+[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mindex.css  [39m[1m[2m100.06 kB[22m[1m[22m[2m │ gzip: 18.08 kB[22m
+[2mdist/[22m[36mindex.js   [39m[1m[2m130.55 kB[22m[1m[22m[2m │ gzip: 32.85 kB[22m
+[32m[36m[vite:dts][32m Declaration files built in 4639ms.
+[39m
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mindex.css  [39m[1m[2m100.06 kB[22m[1m[22m[2m │ gzip: 18.08 kB[22m
+[2mdist/[22m[36mindex.cjs  [39m[1m[2m102.69 kB[22m[1m[22m[2m │ gzip: 29.13 kB[22m
+[32m✓ built in 7.88s[39m

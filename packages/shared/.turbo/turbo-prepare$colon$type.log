@@ -1,0 +1,13 @@
+
+
+> @vue/devtools-shared@7.7.2 prepare:type /Users/kang-wooyong/Downloads/devtools-main/packages/shared
+> tsup --dts-only
+
+[34mCLI[39m Building entry: src/index.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Using tsup config: /Users/kang-wooyong/Downloads/devtools-main/packages/shared/tsup.config.ts
+DTS Build start
+DTS ⚡️ Build success in 2918ms
+DTS dist/index.d.ts  1.89 KB
+DTS dist/index.d.cts 1.89 KB

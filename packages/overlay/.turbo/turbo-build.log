@@ -1,0 +1,10 @@
+
+
+> @vue/devtools-overlay@7.7.2 build /Users/kang-wooyong/Downloads/devtools-main/packages/overlay
+> vite build
+
+[36mvite v6.2.0 [32mbuilding for production...[36m[39m
+[2K[1Gtransforming (1) [2msrc/main.ts[22m[2K[1Gtransforming (3) [2msrc/App.vue[22m[2K[1Gtransforming (5) [2m../../node_modules/.pnpm/@vue+runtime-dom@3.5.13/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js[22m[2K[1Gtransforming (7) [2m../shared/dist/index.js[22m[2K[1Gtransforming (12) [2m../../node_modules/.pnpm/shiki@3.1.0/node_modules/shiki/dist/core.mjs[22m[2K[1Gtransforming (58) [2m../../node_modules/.pnpm/regex-recursion@6.0.2/node_modules/regex-recursion/src/index.js[22m[2K[1Gtransforming (124) [2m../../node_modules/.pnpm/@vue+runtime-core@3.5.13/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js[22m[2K[1Gtransforming (127) [2m../../node_modules/.pnpm/@vueuse+shared@12.7.0_typescript@5.7.3/node_modules/@vueuse/shared/index.mjs[22m[2K[1G[32m✓[39m 129 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mdevtools-overlay.css  [39m[1m[2m  3.75 kB[22m[1m[22m[2m │ gzip:  1.07 kB[22m
+[2mdist/[22m[36mdevtools-overlay.js   [39m[1m[2m220.94 kB[22m[1m[22m[2m │ gzip: 76.23 kB[22m
+[32m✓ built in 2.37s[39m

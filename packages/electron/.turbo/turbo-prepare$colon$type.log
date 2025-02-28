@@ -1,0 +1,12 @@
+
+
+> @vue/devtools-electron@7.7.2 prepare:type /Users/kang-wooyong/Downloads/devtools-main/packages/electron
+> tsup src/index.ts --dts-only --format cjs,esm
+
+[34mCLI[39m Building entry: src/index.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+DTS Build start
+DTS ⚡️ Build success in 3101ms
+DTS dist/index.d.cts 92.00 B
+DTS dist/index.d.ts  92.00 B

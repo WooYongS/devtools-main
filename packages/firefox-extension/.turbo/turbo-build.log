@@ -1,0 +1,22 @@
+
+
+> @vue/devtools-firefox-extension@7.7.0 build /Users/kang-wooyong/Downloads/devtools-main/packages/firefox-extension
+> cross-env NODE_ENV=production tsup
+
+[34mCLI[39m Building entry: src/background.ts, src/detector.ts, src/devtools-background.ts, src/devtools-overlay.ts, src/devtools-panel.ts, src/injection.ts, src/prepare.ts, src/proxy.ts, src/user-app.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Using tsup config: /Users/kang-wooyong/Downloads/devtools-main/packages/firefox-extension/tsup.config.ts
+[34mCLI[39m Target: es2018
+[34mCLI[39m Cleaning output folder
+[34mIIFE[39m Build start
+[32mIIFE[39m [1mdist/background.js          [22m[32m11.42 KB[39m
+[32mIIFE[39m [1mdist/detector.js            [22m[32m1.30 KB[39m
+[32mIIFE[39m [1mdist/proxy.js               [22m[32m65.59 KB[39m
+[32mIIFE[39m [1mdist/devtools-overlay.js    [22m[32m390.00 B[39m
+[32mIIFE[39m [1mdist/prepare.js             [22m[32m79.93 KB[39m
+[32mIIFE[39m [1mdist/devtools-background.js [22m[32m731.00 B[39m
+[32mIIFE[39m [1mdist/injection.js           [22m[32m239.00 B[39m
+[32mIIFE[39m [1mdist/user-app.js            [22m[32m949.39 KB[39m
+[32mIIFE[39m [1mdist/devtools-panel.js      [22m[32m5.91 MB[39m
+[32mIIFE[39m ⚡️ Build success in 641ms

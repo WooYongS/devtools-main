@@ -1,0 +1,73 @@
+
+
+> @vue/devtools-electron@7.7.2 build /Users/kang-wooyong/Downloads/devtools-main/packages/electron
+> tsx scripts/build.ts
+
+[36mℹ[39m [36mBuilding devtools-electron[39m                                                                                                                                   [90m오전 11:48:44[39m
+[34mCLI[39m Building entry: src/app.ts, src/index.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Building entry: src/user-app.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Building entry: src/user-app.iife.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Building entry: src/devtools.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Target: es2018
+[34mIIFE[39m Build start
+[34mCLI[39m Target: es2018
+[34mCJS[39m Build start
+[34mESM[39m Build start
+[34mCLI[39m Target: es2018
+[34mCJS[39m Build start
+[34mESM[39m Build start
+[34mCLI[39m Target: es2018
+[34mIIFE[39m Build start
+DTS Build start
+DTS Build start
+DTS Build start
+DTS Build start
+Generated an empty chunk: "cli".
+Generated an empty chunk: "cli".
+[32mIIFE[39m [1mdist/user-app.iife.js [22m[32m1001.30 KB[39m
+[32mIIFE[39m ⚡️ Build success in 6201ms
+Generated an empty chunk: "cli".
+[32m✔[39m [32mBuild succeeded for devtools-electron[39m                                                                                                                        [90m오전 11:48:51[39m
+[32mIIFE[39m [1mdist/devtools.js [22m[32m5.97 MB[39m
+[32mIIFE[39m ⚡️ Build success in 6163ms
+  [1mdist/cli.cjs[22m (total size: [36m921 B[39m, chunk size: [36m921 B[39m)                                                                                                           [90m오전 11:48:51[39m
+
+  [1mdist/cli.mjs[22m (total size: [36m374 B[39m, chunk size: [36m374 B[39m)                                                                                                           [90m오전 11:48:51[39m
+
+Σ Total dist size (byte size): [36m7.29 MB[39m
+                                                                                                                                                                [90m오전 11:48:51[39m
+
+[43m[30m WARN [39m[49m Build is done with some warnings:                                                                                                                        [90m오전 11:48:51[39m
+
+- Potential missing package.json files: [36mdist/index.cjs[39m, [36mdist/index.js[39m
+
+[32mESM[39m [1mdist/user-app.js [22m[32m77.79 KB[39m
+[32mESM[39m ⚡️ Build success in 6278ms
+[32mCJS[39m [1mdist/app.cjs   [22m[32m1.91 KB[39m
+[32mCJS[39m [1mdist/index.cjs [22m[32m77.82 KB[39m
+[32mCJS[39m ⚡️ Build success in 6297ms
+[32mESM[39m [1mdist/app.js   [22m[32m1.44 KB[39m
+[32mESM[39m [1mdist/index.js [22m[32m77.33 KB[39m
+[32mESM[39m ⚡️ Build success in 6297ms
+[32mCJS[39m [1mdist/user-app.cjs [22m[32m78.13 KB[39m
+[32mCJS[39m ⚡️ Build success in 6283ms
+DTS ⚡️ Build success in 5687ms
+DTS dist/user-app.iife.d.ts 13.00 B
+DTS ⚡️ Build success in 5707ms
+DTS dist/user-app.d.cts 13.00 B
+DTS dist/user-app.d.ts  13.00 B
+DTS ⚡️ Build success in 7416ms
+DTS dist/devtools.d.ts 13.00 B
+DTS ⚡️ Build success in 7945ms
+DTS dist/app.d.cts   13.00 B
+DTS dist/index.d.cts 92.00 B
+DTS dist/app.d.ts    13.00 B
+DTS dist/index.d.ts  92.00 B

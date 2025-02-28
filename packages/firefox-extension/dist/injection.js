@@ -1,0 +1,1 @@
+"use strict";(()=>{var t;if(document instanceof HTMLDocument){let n=chrome.runtime.getURL("dist/prepare.js"),e=document.createElement("script");e.src=n,document.documentElement.appendChild(e),(t=e.parentNode)==null||t.removeChild(e)}})();

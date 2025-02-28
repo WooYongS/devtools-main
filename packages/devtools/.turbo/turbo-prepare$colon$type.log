@@ -1,0 +1,15 @@
+
+
+> @vue/devtools@7.7.2 prepare:type /Users/kang-wooyong/Downloads/devtools-main/packages/devtools
+> tsup --dts-only
+
+[34mCLI[39m Building entry: src/hook.ts, src/index.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.4.0
+[34mCLI[39m Using tsup config: /Users/kang-wooyong/Downloads/devtools-main/packages/devtools/tsup.config.ts
+DTS Build start
+DTS ⚡️ Build success in 4845ms
+DTS dist/hook.d.ts   13.00 B
+DTS dist/index.d.ts  2.31 KB
+DTS dist/hook.d.cts  13.00 B
+DTS dist/index.d.cts 2.31 KB

@@ -1,0 +1,33 @@
+packages:
+  - packages/*
+  - docs
+  - packages/playground/**
+
+catalog:
+  vite-plugin-dts: ^4.5.0
+  vue: ^3.5.13
+  vue-router: ^4.5.0
+  perfect-debounce: ^1.0.0
+  shiki: ^3.0.0
+  splitpanes: ^3.1.8
+  vue-virtual-scroller: 2.0.0-beta.8
+  '@vitejs/plugin-vue': ^5.2.1
+  '@iconify/json': ^2.2.310
+  '@types/node': ^22.13.5
+  '@unocss/reset': ^66.0.0
+  floating-vue: 5.2.2
+  pinia: ^3.0.1
+  sass-embedded: ^1.85.1
+  unocss: ^66.0.0
+  unplugin-auto-import: ^19.1.0
+  vite: ^6.2.0
+  '@vueuse/core': ^12.7.0
+  '@vueuse/integrations': ^12.7.0
+  colord: ^2.9.3
+  vite-hot-client: ^2.0.4
+  mitt: ^3.0.1
+  pathe: ^2.0.3
+  execa: ^9.5.2
+  vite-plugin-inspect: ^0.10.6
+  serve: ^14.2.4
+  typescript: ^5.7.3
